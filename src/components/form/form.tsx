@@ -50,6 +50,7 @@ export const Form = (props: FormProps) => {
       <div className="bg-white h-full">
         <h1 className="text-xl font-bold ml-16">QR Code Image Generator</h1>
         <form
+          data-testid="form-virtual-card"
           className="px-4 flex flex-col gap-4 mt-2"
           onSubmit={handleSubmit(handleSubmitForm)}
           {...props}
@@ -57,6 +58,7 @@ export const Form = (props: FormProps) => {
           <div>
             <Input
               id="name"
+              data-testid="name"
               label="Name"
               placeholder="Your name"
               validationErrorMessage={errors.name?.message}
@@ -68,6 +70,7 @@ export const Form = (props: FormProps) => {
           </div>
           <Input
             id="linkedinUrl"
+            data-testid="linkedinUrl"
             label="Linkedin URL"
             defaultValue="https://www.linkedin.com/"
             placeholder="https://www.linkedin.com/company/buzzvel/"
@@ -76,6 +79,7 @@ export const Form = (props: FormProps) => {
           />
           <Input
             id="githubUrl"
+            data-testid="githubUrl"
             label="Github URL"
             defaultValue="https://www.github.com/"
             placeholder="https://www.github.com/buzzvel"
@@ -84,12 +88,18 @@ export const Form = (props: FormProps) => {
           />
           <Textarea
             label="Description"
+            data-testid="description"
             placeholder="Write your brief description here"
             validationErrorMessage={errors.description?.message}
             {...register('description')}
           />
           <div className="w-2/4">
-            <Button disabled={loading} type="submit" label="Generate Image" />
+            <Button
+              data-testid="button-generate"
+              disabled={loading}
+              type="submit"
+              label="Generate Image"
+            />
           </div>
         </form>
       </div>

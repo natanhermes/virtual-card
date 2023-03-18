@@ -18,7 +18,7 @@ export const VirtualCard = forwardRef<HTMLDivElement, VirtualCardProps>(
           <Text text="Scan Me" />
           <QRCode
             className="mt-6"
-            value={`${import.meta.env.VITE_DOMAIN_URL}/${user.name}`}
+            value={`${process.env.VITE_DOMAIN_URL}/${user.name}`}
           />
         </div>
       </div>
