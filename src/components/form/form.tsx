@@ -90,7 +90,7 @@ export const Form = (props: FormProps) => {
           <Input
             id="linkedinUrl"
             label="Linkedin URL"
-            defaultValue="https://www.linkedin.com/in/natanhermes"
+            defaultValue="https://www.linkedin.com/"
             placeholder="https://www.linkedin.com/company/buzzvel/"
             validationErrorMessage={errors.linkedinUrl?.message}
             {...register('linkedinUrl')}
@@ -98,14 +98,13 @@ export const Form = (props: FormProps) => {
           <Input
             id="githubUrl"
             label="Github URL"
-            defaultValue="https://www.github.com/natanhermes"
+            defaultValue="https://www.github.com/"
             placeholder="https://www.github.com/buzzvel"
             validationErrorMessage={errors.githubUrl?.message}
             {...register('githubUrl')}
           />
           <Textarea
             label="Description"
-            defaultValue="Eu duis do exercitation eu aliqua cillum ea laboris ad ipsum. Occaecat eiusmod cillum et veniam id ullamco labore enim aliquip nulla ea labore. Voluptate fugiat laborum mollit sit sunt mollit magna ut laborum. Ullamco duis exercitation cillum incididunt aliqua. Non do tempor consequat officia occaecat qui eiusmod eu ea. Nostrud eu sit voluptate deserunt duis amet voluptate irure proident ullamco consectetur eiusmod. In sunt ad ea ullamco"
             placeholder="Write your brief description here"
             validationErrorMessage={errors.description?.message}
             {...register('description')}
