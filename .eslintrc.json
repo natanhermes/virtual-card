@@ -2,13 +2,14 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "jest": true
+    "jest/globals": true
   },
   "extends": [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "standard",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -18,7 +19,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "jsx-a11y", "@typescript-eslint"],
+  "plugins": ["react", "jsx-a11y", "@typescript-eslint", "jest"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -44,12 +45,8 @@
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"],
-    "jsx-a11y/aria-props": "warn",
-    "jsx-a11y/aria-proptypes": "warn",
-    "jsx-a11y/aria-unsupported-elements": "warn",
-    "jsx-a11y/role-has-required-aria-props": "warn",
-    "jsx-a11y/role-supports-aria-props": "warn"
+    "@typescript-eslint/no-use-before-define": ["error"]
+
   },
   "settings": {
     "react": {

@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import {} from 'react-router';
 import { GeneratePage } from '@/pages/generate';
 import { InfoCard } from '@/components/info-card';
 
