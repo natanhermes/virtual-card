@@ -1,0 +1,8 @@
+query GetCollaboratorInfoByName($name: String!) {
+  collaborators(where: { name: $name }, stage: DRAFT) {
+    githubUrl
+    description
+    linkedinUrl
+    name
+  }
+}

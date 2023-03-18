@@ -1,0 +1,21 @@
+mutation CreateCollaborator(
+  $name: String!
+  $description: String
+  $linkedinUrl: String!
+  $githubUrl: String!
+) {
+  createCollaborator(
+    data: {
+      name: $name
+      description: $description
+      githubUrl: $githubUrl
+      linkedinUrl: $linkedinUrl
+    }
+  ) {
+    id
+    name
+    linkedinUrl
+    githubUrl
+    description
+  }
+}
