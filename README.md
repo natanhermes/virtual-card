@@ -76,7 +76,7 @@ VITE_API_URL= get url public content api
 VITE_API_ACCESS_TOKEN= get token in "Permanent Auth Tokens"
 ```
 
-4. Run locally:
+7. Run locally, use node version 18:
 
 ```sh
 npm run dev
