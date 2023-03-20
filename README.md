@@ -67,13 +67,13 @@ https://app.hygraph.com/clone/8584237ce8bf4ccb9d0c727d800960eb?name=Virtual%20Ca
 ```
 
 6. Get your environment variables
-Project Settings -> Public Content API -> Content API URL
+Project Settings -> Access -> API Access -> Endpoints -> Content API URL
 
 ```env
 VITE_API_URL= get url public content api in the hygraph project settings
 ```
 
-Project Settings -> Permanent Auth Tokens -> Copy Access Token
+Project Settings -> Access -> API Access -> Permanent Auth Tokens -> Copy Access Token
 ```env
 VITE_API_ACCESS_TOKEN= get token in "Permanent Auth Tokens"
 ```
